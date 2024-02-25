@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<header>
+    <h1>QUIZZ JAVASCRIPT</h1>
+</header>
+
+<main>
+    <div id="questionContainer">
+        <p id="question">Appuyez sur DEMARRER LE QUIZZ</p>
+    </div>
+    <section id="purposes">
+        <div id="propositionContainer">
+            <div class="purposeContainerOne">
+                <p onclick="validation(this)" class="response"></p>
+            </div>
+            <div class="purposeContainerTwo">
+                <p onclick="validation(this)" class="response"></p>
+            </div>
+            <div class="purposeContainerThree">
+                <p onclick="validation(this)" class="response"></p>
+            </div>
+            <div class="purposeContainerFour">
+                <p onclick="validation(this)" class="response"></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div id="footer">
+        <p id="goodOrNot"></p>
+        <p onclick="displayQuestion()" id="begin" class="beginButton">DEMARRER LE QUIZZ</p>
+        <p id="count"></p>
+    </div>
+</footer>
+
+<script src="./assets/js/main.js"></script>
+</body>
+
+</html>

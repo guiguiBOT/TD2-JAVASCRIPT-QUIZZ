@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    background-color: #005F73;
+    font-family: 'Roboto', sans-serif;
+    color: #E9D8A6;
+}
+
+header {
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+#questionContainer {
+    margin-bottom: 30px;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#question {
+    color: #E9D8A6;
+}
+
+#purposes {
+    display: flex;
+    justify-content: center;
+}
+
+#propositionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0A9396;
+    border: 10px solid #EE9B00;
+    border-radius: 15px;
+    width: 30%;
+    padding: 25px;
+}
+
+.purposeContainerOne, .purposeContainerTwo, .purposeContainerThree, .purposeContainerFour {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    min-width: 100%;
+    min-height: 20px;
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+.purposeContainerOne:hover, .purposeContainerTwo:hover, .purposeContainerTwo:hover, .purposeContainerFour:hover, .purposeContainerFive:hover {
+    border: 3px solid #EE9B00 ;
+    cursor: pointer;
+}
+
+.purposeContainerOne:active, .purposeContainerTwo:active, .purposeContainerThree:active, .purposeContainerFour:active, .purposeContainerFive:active {
+    color: #CA6702;
+    cursor: pointer;
+}
+
+.response:hover {
+    color: #EE9B00;
+    cursor: pointer;
+}
+
+.response:active {
+    color: #CA6702;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px #E9D8A6;
+}
+
+#footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.beginButton {
+    width: 200px;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: #0A9396;
+}
+
+.beginButton:hover {
+    color: #EE9B00;
+    cursor: pointer;
+}
+
+.beginButton:active {
+    color: #CA6702;
+}
+
+#goodOrNot, #count {
+    width: 200px;
+    min-height: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 3px solid #EE9B00;
+    border-radius: 5px;
+    background-color: #0A9396;
+}
+
+@media screen and (max-width: 677px) {
+    #footer {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #beginButton {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .response {
+        font-size: 0.8em;
+    }
+}
